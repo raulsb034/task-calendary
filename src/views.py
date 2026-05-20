@@ -532,6 +532,9 @@ class TaskCalendarView:
         if self._selected_task_id is None:
             messagebox.showwarning("Seleccionar tarea", "Selecciona primero una tarea de la lista")
             return
+        confirm = messagebox.askyesno("Confirmar eliminación", "¿Estás seguro de que deseas eliminar la tarea?")
+        if not confirm:
+            return
         try:
             self.controller.delete_task(self._selected_task_id)
             self._selected_task_id = None
