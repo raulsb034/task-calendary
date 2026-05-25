@@ -1,4 +1,4 @@
-# README - Manual de Usuario: Task Calendary
+# README - Task Calendary
 
 ## 1. Stack Tecnológico y Arquitectura
 
